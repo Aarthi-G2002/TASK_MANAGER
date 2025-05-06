@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #0d1b2a;
+    color: #fff;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  #add-btn {
+    background: #00b4d8;
+    color: white;
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .filter-btn, #sort-btn {
+    background: #f1f1f1;
+    color: black;
+  }
+
+  .filter-btn.active {
+    background: #00b4d8;
+    color: white;
+  }
+
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .task-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+
+  .task-actions button {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .complete-btn {
+    background: #4caf50;
+    color: white;
+  }
+
+  .delete-btn {
+    background: #e63946;
+    color: white;
+  }
+
+  @media (max-width: 500px) {
+    .task-form {
+      flex-direction: column;
+    }
+
+    #task-input {
+      margin-bottom: 10px;
+    }
+  }
